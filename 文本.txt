@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Encuesta de Pollo Frito</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff8f0;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #e74c3c;
+    }
+    form {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+    button {
+      background-color: #e74c3c;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Encuesta: ¡Ayúdanos a abrir la mejor pollería!</h1>
+
+<form action="https://formsubmit.co/andreshy058@gmail.com" method="POST">
+
+  <label>1. ¿Con qué frecuencia comes pollo frito?</label>
+  <input type="radio" name="frecuencia" value="Diario"> Diario
+  <input type="radio" name="frecuencia" value="Semanal"> Semanal
+  <input type="radio" name="frecuencia" value="Ocasional"> Ocasional
+
+  <label>2. ¿Qué sabor de pollo frito prefieres?</label>
+  <input type="checkbox" name="sabor[]" value="Picante"> Picante
+  <input type="checkbox" name="sabor[]" value="Agridulce"> Agridulce
+  <input type="checkbox" name="sabor[]" value="Tradicional"> Tradicional
+  <input type="checkbox" name="sabor[]" value="Otro"> Otro
+
+  <label>3. ¿Qué valoras más al elegir un restaurante?</label>
+  <input type="checkbox" name="valor[]" value="Precio"> Precio
+  <input type="checkbox" name="valor[]" value="Sabor"> Sabor
+  <input type="checkbox" name="valor[]" value="Calidad"> Calidad
+  <input type="checkbox" name="valor[]" value="Servicio"> Servicio
+
+  <label>4. ¿Cuál es tu presupuesto promedio para una comida?</label>
+  <input type="radio" name="presupuesto" value="Menos de €5"> Menos de €5
+  <input type="radio" name="presupuesto" value="€5-€10"> €5-€10
+  <input type="radio" name="presupuesto" value="Más de €10"> Más de €10
+
+  <label>5. ¿Prefieres pollo con o sin hueso?</label>
+  <input type="radio" name="hueso" value="Con hueso"> Con hueso
+  <input type="radio" name="hueso" value="Sin hueso"> Sin hueso
+
+  <label>6. ¿Qué acompañamientos prefieres?</label>
+  <input type="checkbox" name="acompañamientos[]" value="Papas fritas"> Papas fritas
+  <input type="checkbox" name="acompañamientos[]" value="Ensalada"> Ensalada
+  <input type="checkbox" name="acompañamientos[]" value="Arroz"> Arroz
+
+  <label>7. ¿Qué bebida te gusta con el pollo?</label>
+  <input type="text" name="bebida">
+
+  <label>8. ¿Restaurante favorito de pollo y por qué?</label>
+  <input type="text" name="restaurante_favorito">
+
+  <label>9. ¿Compartes el pollo con amigos o familia?</label>
+  <input type="radio" name="compartes" value="Sí"> Sí
+  <input type="radio" name="compartes" value="No"> No
+
+  <label>10. ¿Qué tan rápido debe ser el servicio?</label>
+  <input type="text" name="rapidez">
+
+  <label>11. ¿Prefieres comer en el local o pedir a domicilio?</label>
+  <input type="radio" name="modo" value="En el local"> En el local
+  <input type="radio" name="modo" value="A domicilio"> A domicilio
+
+  <label>12. ¿La decoración del lugar influye en tu decisión?</label>
+  <input type="radio" name="decoracion" value="Sí"> Sí
+  <input type="radio" name="decoracion" value="No"> No
+
+  <label>13. ¿Qué tan importante es la limpieza?</label>
+  <input type="radio" name="limpieza" value="Muy importante"> Muy importante
+  <input type="radio" name="limpieza" value="Poco importante"> Poco importante
+
+  <label>14. ¿Qué promociones prefieres?</label>
+  <input type="checkbox" name="promociones[]" value="2x1"> 2x1
+  <input type="checkbox" name="promociones[]" value="Combos"> Combos
+  <input type="checkbox" name="promociones[]" value="Descuentos"> Descuentos
+
+  <label>15. ¿Te interesa probar sabores nuevos?</label>
+  <input type="radio" name="sabores_nuevos" value="Sí"> Sí
+  <input type="radio" name="sabores_nuevos" value="No"> No
+
+  <label>16. ¿Con quién comes pollo normalmente?</label>
+  <input type="text" name="compañia">
+
+  <label>17. ¿Qué redes sociales usas más?</label>
+  <input type="checkbox" name="redes[]" value="Instagram"> Instagram
+  <input type="checkbox" name="redes[]" value="TikTok"> TikTok
+  <input type="checkbox" name="redes[]" value="Facebook"> Facebook
+
+  <label>18. ¿Qué esperas del servicio al cliente?</label>
+  <textarea name="servicio_cliente"></textarea>
+
+  <label>19. ¿Probarías opciones vegetarianas?</label>
+  <input type="radio" name="vegetariano" value="Sí"> Sí
+  <input type="radio" name="vegetariano" value="No"> No
+
+  <label>20. ¿A qué hora sueles comer pollo?</label>
+  <input type="text" name="hora_comida">
+
+  <label>21. ¿Qué tan lejos irías por buen pollo?</label>
+  <input type="text" name="distancia">
+
+  <label>22. ¿Prefieres ingredientes frescos?</label>
+  <input type="radio" name="ingredientes" value="Sí"> Sí
+  <input type="radio" name="ingredientes" value="No"> No
+
+  <label>23. ¿Menú con fotos o solo texto?</label>
+  <input type="radio" name="menu" value="Con fotos"> Con fotos
+  <input type="radio" name="menu" value="Solo texto"> Solo texto
+
+  <label>24. ¿Cómo prefieres pagar?</label>
+  <input type="checkbox" name="pago[]" value="Efectivo"> Efectivo
+  <input type="checkbox" name="pago[]" value="Tarjeta"> Tarjeta
+  <input type="checkbox" name="pago[]" value="Móvil"> Móvil
+
+  <label>25. ¿Qué odias en otros restaurantes de pollo?</label>
+  <textarea name="odio"></textarea>
+
+  <button type="submit">Enviar</button>
+
+</form>
+
+</body>
+</html>
